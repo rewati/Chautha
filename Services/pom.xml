@@ -11,5 +11,17 @@
 
     <artifactId>Services</artifactId>
 
+    <dependencies>
+        <dependency>
+            <groupId>Chautha</groupId>
+            <artifactId>Core-util</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>Chautha</groupId>
+            <artifactId>Dal</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+    </dependencies>
 
 </project>
