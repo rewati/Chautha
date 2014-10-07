@@ -1,35 +1,26 @@
 package com.chautha.core.model.entities;
 
-import org.hibernate.annotations.GenericGenerator;
+import org.hibernate.validator.constraints.NotEmpty;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import java.util.UUID;
+import java.io.Serializable;
 
 /**
  * Created by rewati on 9/13/14.
  */
 @Entity
-public class User {
-    @Id
-    @GeneratedValue(generator = "uuid")
-    @GenericGenerator(name = "uuid", strategy = "uuid")
-    @Column(name = "uuid", unique = true)
-    private UUID uuid;
+public class User extends UuidEntity implements Serializable {
+
+    @NotEmpty
     private String firstName;
+    @NotEmpty
     private String lastName;
+    @NotEmpty
+    @Column(unique = true)
     private String userName;
+    @NotEmpty
     private String password;
-
-    public UUID getUuid() {
-        return uuid;
-    }
-
-    public void setUuid(UUID uuid) {
-        this.uuid = uuid;
-    }
 
     public String getFirstName() {
         return firstName;

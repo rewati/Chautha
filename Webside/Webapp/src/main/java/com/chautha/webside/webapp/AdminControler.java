@@ -15,9 +15,15 @@ public class AdminControler {
     @Autowired
     private UserServices userServices;
 
+
     @RequestMapping("")
     public String testMethod(){
+        System.out.println("kdncjdc");
         userServices.saveUser(null);
         return null;
+    }
+
+    public void setUserServices(UserServices userServices) {
+        this.userServices = userServices;
     }
 }
