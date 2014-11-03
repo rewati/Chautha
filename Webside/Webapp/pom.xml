@@ -17,6 +17,7 @@
         <project.version>1.0-SNAPSHOT</project.version>
         <spring.version>4.0.6.RELEASE</spring.version>
         <hibernate.version>4.3.6.Final</hibernate.version>
+        <apache.tiles.version>3.0.4</apache.tiles.version>
     </properties>
 
     <dependencies>
@@ -29,6 +30,22 @@
             <groupId>org.springframework</groupId>
             <artifactId>spring-webmvc</artifactId>
             <version>${spring.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.tiles</groupId>
+            <artifactId>tiles-core</artifactId>
+            <version>${apache.tiles.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.tiles</groupId>
+            <artifactId>tiles-jsp</artifactId>
+            <version>${apache.tiles.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.tiles</groupId>
+            <artifactId>tiles-extras</artifactId>
+            <version>${apache.tiles.version}</version>
         </dependency>
     </dependencies>
     <build>

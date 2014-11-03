@@ -11,12 +11,12 @@ import static org.junit.Assert.*;
 
 public class AdminControlerTest {
 
-    AdminControler adminControler;
+    AdminControlerIml adminControler;
     UserServices userServices;
 
     @Before
     public void setup(){
-        adminControler = new AdminControler();
+        adminControler = new AdminControlerIml();
         userServices = createStrictMock(UserServices.class);
         adminControler.setUserServices(userServices);
     }

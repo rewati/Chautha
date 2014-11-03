@@ -41,7 +41,7 @@
                         </excludes>
                     </instrumentation>
                     <check>
-                        <!--<haltOnFailure>true</haltOnFailure>--><!-- optional -->
+                        <haltOnFailure>false</haltOnFailure>
                         <!-- Per-class thresholds -->
                         <lineRate>80</lineRate>
                         <branchRate>80</branchRate>

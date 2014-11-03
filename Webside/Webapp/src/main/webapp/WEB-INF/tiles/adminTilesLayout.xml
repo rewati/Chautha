@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+        "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+        "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+
+    <definition name="adminBase"
+                template="/WEB-INF/jsp/admin/views/admin.jsp">
+        <put-attribute name="title" 	value="" />
+        <put-attribute name="header" 	value="/WEB-INF/jsp/admin/views/header.jsp" />
+        <put-attribute name="menu" 		value="/WEB-INF/jsp/admin/views/menu.jsp" />
+        <put-attribute name="content" 	value="/WEB-INF/jsp/admin/views/content.jsp" />
+        <put-attribute name="footer" 	value="/WEB-INF/jsp/admin/views/footer.jsp" />
+    </definition>
+
+    <definition name="admin" extends="adminBase">
+        <put-attribute name="title" value="admin" />
+        <put-attribute name="content" value="/WEB-INF/jsp/admin/views/dashboard.jsp" />
+    </definition>
+
+    <definition name="pageLayoutList"
+                template="/WEB-INF/jsp/admin/views/pageLayoutList.jsp">
+    </definition>
+
+</tiles-definitions>
