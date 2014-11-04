@@ -702,3 +702,9 @@ ul.github-buttons li {
 .col-md-3  {
     width: 35%;
 }
+
+
+#mybox {
+    width:80%;
+    float:right;
+}

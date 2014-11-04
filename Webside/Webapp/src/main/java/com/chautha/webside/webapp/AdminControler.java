@@ -15,4 +15,7 @@ public interface AdminControler {
 
     @RequestMapping("/pageLayoutList")
     public String pageLayoutList();
+
+    @RequestMapping("/blogs")
+    public String blogList();
 }

@@ -9,7 +9,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="admin"> <img alt="Admin Logo" src="adminResources/img/logo.png" class="hidden-xs"/>
+            <a class="navbar-brand" href="admin"> <img alt="Admin Logo" src="${pageContext.request.contextPath}/adminResources/img/logo.png" class="hidden-xs"/>
                 <span>Chautha Admin</span></a>
 
             <!-- user dropdown starts -->

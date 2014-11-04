@@ -16,13 +16,16 @@ public class AdminControlerIml implements AdminControler {
     private UserServices userServices;
 
     public String testMethod(){
-        System.out.println("kdncjdc");
         return "admin";
     }
 
     public String pageLayoutList(){
-        System.out.println("kdncjdc");
         return "pageLayoutList";
+    }
+
+    @Override
+    public String blogList() {
+        return "blogs";
     }
 
     public void setUserServices(UserServices userServices) {

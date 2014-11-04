@@ -18,8 +18,14 @@
         <put-attribute name="content" value="/WEB-INF/jsp/admin/views/dashboard.jsp" />
     </definition>
 
-    <definition name="pageLayoutList"
-                template="/WEB-INF/jsp/admin/views/pageLayoutList.jsp">
+    <definition name="pageLayoutList" extends="adminBase">
+        <put-attribute name="title" value="pageLayoutList" />
+        <put-attribute name="content" value="/WEB-INF/jsp/admin/views/pageLayoutList.jsp" />
+    </definition>
+
+    <definition name="blogs" extends="adminBase">
+        <put-attribute name="title" value="pageLayoutList" />
+        <put-attribute name="content" value="/WEB-INF/jsp/admin/views/blogs.jsp" />
     </definition>
 
 </tiles-definitions>

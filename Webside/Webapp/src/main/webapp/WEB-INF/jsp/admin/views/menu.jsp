@@ -18,10 +18,9 @@
                                 <li><a href="#">Page Layout</a></li>
                             </ul>
                         </li>
-                        <li><a class="ajax-link" onclick="pageLayoutList()"><i class="glyphicon glyphicon-eye-open"></i><span> Page Layouts</span></a>
+                        <li><a class="ajax-link" href="/admin/pageLayoutList"><i class="glyphicon glyphicon-eye-open"></i><span> Page Layouts</span></a>
                         </li>
-                        <li><a class="ajax-link" href="form.html"><i
-                                    class="glyphicon glyphicon-edit"></i><span> Blogs</span></a></li>
+                        <li><a class="ajax-link" href="/admin/blogs"><i class="glyphicon glyphicon-edit"></i><span> Blogs</span></a></li>
                         <li><a class="ajax-link" href="chart.html"><i class="glyphicon glyphicon-folder-close"></i><span> Categories</span></a>
                         </li>
                         <li><a class="ajax-link" href="/bvjh"><i class="glyphicon glyphicon-flag"></i><span> Tags</span></a>
