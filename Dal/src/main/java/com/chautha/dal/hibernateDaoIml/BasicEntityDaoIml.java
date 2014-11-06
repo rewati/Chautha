@@ -1,14 +1,14 @@
 package com.chautha.dal.hibernateDaoIml;
 
 import com.chautha.dal.dao.BasicEntityDao;
-import org.hibernate.SessionFactory;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
+import javax.persistence.Query;
 import java.io.Serializable;
 import java.lang.reflect.ParameterizedType;
+import java.util.List;
 
 /**
  * Created by rewati on 9/20/14.
@@ -32,6 +32,15 @@ public class BasicEntityDaoIml< T extends Serializable > implements BasicEntityD
     @Override
     public T getByUuid(String uuid) {
         return this.em.find(getEntityClass(), uuid);
+    }
+
+    @Override
+    public List<T> getList(String uuid, Integer lastpage, Integer resultsPerPage) {
+        String table = getEntityClass().getName();
+        Query q = em.createQuery("select cat from "+table+"  cat");
+        q.setFirstResult(lastpage*resultsPerPage+1);
+        q.setMaxResults(resultsPerPage);
+        return q.getResultList();
     }
 
     @Override

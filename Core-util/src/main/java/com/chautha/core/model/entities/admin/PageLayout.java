@@ -10,11 +10,20 @@ import java.io.Serializable;
  */
 @Entity
 public class PageLayout extends UuidEntity implements Serializable {
+    private String topBar;
     private String leftBar;
     private String rightBar;
     private String header;
     private String footer;
     private String content;
+
+    public String getTopBar() {
+        return topBar;
+    }
+
+    public void setTopBar(String topBar) {
+        this.topBar = topBar;
+    }
 
     public String getLeftBar() {
         return leftBar;
