@@ -24,4 +24,7 @@ public interface AdminControler {
 
     @RequestMapping("/users")
     public List<User> getUsersList();
+
+    @RequestMapping("/newBlog")
+    public String newBlog();
 }

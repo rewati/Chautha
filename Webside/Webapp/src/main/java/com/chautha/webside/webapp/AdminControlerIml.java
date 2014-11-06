@@ -36,6 +36,11 @@ public class AdminControlerIml implements AdminControler {
         return null;
     }
 
+    @Override
+    public String newBlog() {
+        return "newBlog";
+    }
+
     public void setUserServices(UserServices userServices) {
         this.userServices = userServices;
     }

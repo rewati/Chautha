@@ -28,4 +28,9 @@
         <put-attribute name="content" value="/WEB-INF/jsp/admin/views/blogs.jsp" />
     </definition>
 
+    <definition name="newBlog" extends="adminBase">
+        <put-attribute name="title" value="pageLayoutList" />
+        <put-attribute name="content" value="/WEB-INF/jsp/admin/views/articleForm.jsp" />
+    </definition>
+
 </tiles-definitions>

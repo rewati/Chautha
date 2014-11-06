@@ -12,7 +12,7 @@
                         <li class="accordion">
                             <a href="#"><i class="glyphicon glyphicon-plus"></i><span> Create New</span></a>
                             <ul class="nav nav-pills nav-stacked">
-                                <li><a href="#">Blog</a></li>
+                                <li><a href="/admin/newBlog">Blog</a></li>
                                 <li><a href="#">Category</a></li>
                                 <li><a href="#">Tag</a></li>
                                 <li><a href="#">Page Layout</a></li>
