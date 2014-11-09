@@ -9,5 +9,4 @@ import java.util.List;
  */
 public interface PageLayoutDao extends BasicEntityDao<PageLayout> {
     public List<PageLayout> getPageLayoutList();
-
 }

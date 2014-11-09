@@ -11,6 +11,8 @@ import java.util.List;
  */
 @Repository
 public class PageLayoutDaoIml extends BasicEntityDaoIml<PageLayout> implements PageLayoutDao {
+
+
     @Override
     public List<PageLayout> getPageLayoutList() {
         return null;

@@ -1,6 +1,7 @@
 package com.chautha.webside.webapp;
 
 import com.chautha.core.model.entities.User;
+import com.chautha.core.model.entities.admin.PageLayout;
 import com.chautha.services.UserServices;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -24,6 +25,11 @@ public class AdminControlerIml implements AdminControler {
 
     public String pageLayoutList(){
         return "pageLayoutList";
+    }
+
+    @Override
+    public PageLayout savePageLayout() {
+        return null;
     }
 
     @Override
