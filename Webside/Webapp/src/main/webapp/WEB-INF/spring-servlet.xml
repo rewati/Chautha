@@ -17,6 +17,9 @@
             ">
 
 
+    <import resource="classpath:cxf-context.xml"/>
+    <import resource="classpath:META-INF/cxf/cxf.xml"/>
+    <import resource="classpath:META-INF/cxf/cxf-servlet.xml"/>
     <context:component-scan base-package="com.chautha"/>
 
     <mvc:resources mapping="/adminResources/**" location="/resources/admin/" />

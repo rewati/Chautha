@@ -4,12 +4,14 @@ import org.hibernate.validator.constraints.NotEmpty;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.xml.bind.annotation.XmlRootElement;
 import java.io.Serializable;
 
 /**
  * Created by rewati on 9/13/14.
  */
 @Entity
+@XmlRootElement
 public class User extends UuidEntity implements Serializable {
 
     @NotEmpty
