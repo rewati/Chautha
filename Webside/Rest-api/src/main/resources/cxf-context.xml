@@ -16,11 +16,18 @@
 
     <context:component-scan base-package="com.cahutha.restapi"/>
 
-    <jaxws:server id="jsonRS" address="">
+    <bean id="jsonProvider"
+          class="org.codehaus.jackson.jaxrs.JacksonJsonProvider"/>
 
-        <jaxws:serviceBean>
+    <jaxrs:server id="jsonRS" address="">
+
+        <jaxrs:serviceBeans>
             <ref bean="testController"/>
-        </jaxws:serviceBean>
-    </jaxws:server>
+        </jaxrs:serviceBeans>
+
+        <jaxrs:providers>
+            <ref bean='jsonProvider' />
+        </jaxrs:providers>
+    </jaxrs:server>
 
 </beans>

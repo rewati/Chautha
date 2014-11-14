@@ -14,8 +14,6 @@ import javax.ws.rs.Produces;
 @WebService(endpointInterface = "adfsmin")
 public interface TestController {
 
-
-    @WebMethod
     @Produces("application/soap+xml,application/json,text/html")
     @GET
     @Path("/user")
