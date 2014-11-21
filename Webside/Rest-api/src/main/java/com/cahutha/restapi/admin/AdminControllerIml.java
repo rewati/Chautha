@@ -8,8 +8,8 @@ import java.util.UUID;
 /**
  * Created by rewati on 11/9/14.
  */
-@Service("testController")
-public class TestControllerIml implements TestController {
+@Service("rsAdminController")
+public class AdminControllerIml implements AdminController {
     @Override
     public User getUser() {
         User user = new User();

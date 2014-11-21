@@ -15,7 +15,7 @@
                                 <li><a href="/admin/newBlog">Blog</a></li>
                                 <li><a href="#">Category</a></li>
                                 <li><a href="#">Tag</a></li>
-                                <li><a href="#">Page Layout</a></li>
+                                <li><a href="/admin/savePageLayout">Page Layout</a></li>
                             </ul>
                         </li>
                         <li><a class="ajax-link" href="/admin/pageLayoutList"><i class="glyphicon glyphicon-eye-open"></i><span> Page Layouts</span></a>

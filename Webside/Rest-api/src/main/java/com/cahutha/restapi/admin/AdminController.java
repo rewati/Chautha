@@ -11,10 +11,11 @@ import javax.ws.rs.Produces;
 /**
  * Created by rewati on 11/9/14.
  */
-@WebService(endpointInterface = "adfsmin")
-public interface TestController {
+@WebService
+@Path("admin")
+public interface AdminController {
 
-    @Produces("application/soap+xml,application/json,text/html")
+    @Produces("application/json,text/html")
     @GET
     @Path("/user")
     public User getUser();

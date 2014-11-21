@@ -8,6 +8,7 @@
 
     <http auto-config="true">
         <intercept-url pattern="/admin/**" access="ROLE_USER" />
+        <intercept-url pattern="/webservices/admin/**" access="ROLE_USER" />
     </http>
 
     <authentication-manager>

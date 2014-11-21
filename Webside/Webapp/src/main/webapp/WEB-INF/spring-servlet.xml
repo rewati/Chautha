@@ -29,9 +29,9 @@
     <bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource"
           destroy-method="close">
         <property name="driverClassName" value="com.mysql.jdbc.Driver" />
-        <property name="url" value="jdbc:mysql://localhost:3306/solearn" />
-        <property name="username" value="root" />
-        <property name="password" value="" />
+        <property name="url" value="jdbc:mysql://localhost:3306/chautha" />
+        <property name="username" value="chautha" />
+        <property name="password" value="jnv7#$3jbcSB" />
     </bean>
 
     <bean id="sessionFactory" class="org.springframework.orm.hibernate4.LocalSessionFactoryBean">

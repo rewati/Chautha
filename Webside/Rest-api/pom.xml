@@ -32,7 +32,14 @@
             <artifactId>cxf-rt-transports-http</artifactId>
             <version>${cxf.version}</version>
         </dependency>
+
+        <dependency>
+            <groupId>org.codehaus.jackson</groupId>
+            <artifactId>jackson-jaxrs</artifactId>
+            <version>1.5.7</version>
+        </dependency>
     </dependencies>
+
 
 
 </project>

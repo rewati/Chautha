@@ -708,3 +708,67 @@ ul.github-buttons li {
     width:80%;
     float:right;
 }
+
+.layouttopbar {
+    border: solid 3px gray;
+    height: 59px;
+    background-color: darkgray;
+    text-align: center;
+    vertical-align: middle;
+}
+.layoutleftbar{
+    width: 20%;
+    border: solid 3px gray;
+    height: 350px;
+    background-color: darkgray;
+    position: relative;
+    float: left;
+    text-align: center;
+    vertical-align: middle;
+}
+.layouttopleftbar {
+    border: solid 3px gray;
+    height: 50%;
+}
+.layoutbottomleftbar {
+        border: solid 3px gray;
+        height: 50%;
+}
+.layoutcontentbox {
+border: solid 3px gray;
+width: 60%;
+height: 350px;
+background-color: darkgray;
+position: relative;
+float: left;
+text-align: center;
+vertical-align: middle;
+}
+.layoutrightbar {
+         width: 20%;
+        border: solid 3px gray;
+        height: 350px;
+        background-color: darkgray;
+        position: relative;
+        float: right;
+        text-align: center;
+        vertical-align: middle;
+}
+.layouttoprightbar {
+border: solid 3px gray;
+        height: 50%;
+}
+.layoutbottomrightbar {
+border: solid 3px gray;
+        height: 50%;
+}
+.layoutfooter {
+border: solid 3px gray;
+    height: 59px;
+    background-color: darkgray;
+    text-align: center;
+    vertical-align: middle;
+}
+.layoutMiddle {
+height: 350px;
+}
