@@ -14,17 +14,23 @@ import java.util.Properties;
  */
 public class Main {
 
+    int port;
+    String configFile;
+    String war;
+    String contextPath;
+
 
     public static void main(String[] args) throws Exception {
 
+        /**
+         * Configuration file selection.
+         */
         Properties prop = new Properties();
         InputStream input = null;
         try {
-
-            String filename = "config.properties";
             input = Main.class.getClassLoader().getResourceAsStream("config.properties");
             if(input != null){
-                prop.load(Main.class.getClassLoader().getResourceAsStream("config.properties"));
+                prop.load(input);
             }
         } catch (IOException ex) {
             ex.printStackTrace();
@@ -38,13 +44,26 @@ public class Main {
             }
         }
 
-        Server server = new Server(8080);
-        WebAppContext webAppContext = new WebAppContext();
-        webAppContext.setContextPath("/");
-        webAppContext.setWar(prop.getProperty("Cautha_Home")+"/lib/Webapp-1.0-SNAPSHOT.war");
-        server.setHandler(webAppContext);
 
+        Server server = new Server(8080);
+        WebAppContext webAppContext = getWebAppContext(prop);
+        server.setHandler(webAppContext);
         server.start();
         server.join();
+    }
+
+    /**
+     * Prepare webapp context for the server.
+     * @param prop
+     * @return
+     */
+    static WebAppContext getWebAppContext(Properties prop) {
+        WebAppContext webAppContext = new WebAppContext();
+        webAppContext.setContextPath("/");
+        webAppContext.setWar(prop.getProperty("Web_AppLIB"));
+        webAppContext.setExtractWAR(true);
+        webAppContext.setCopyWebDir(true);
+        webAppContext.setCopyWebInf(true);
+        return webAppContext;
     }
 }

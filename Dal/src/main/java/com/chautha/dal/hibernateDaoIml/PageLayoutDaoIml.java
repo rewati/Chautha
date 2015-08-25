@@ -1,7 +1,7 @@
 package com.chautha.dal.hibernateDaoIml;
 
-import com.chautha.core.model.entities.admin.PageLayout;
 import com.chautha.dal.dao.PageLayoutDao;
+import com.chautha.dal.entities.admin.PageLayout;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;

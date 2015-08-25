@@ -30,7 +30,6 @@ tinymce.init({
             </div>
             <div class="box-content">
                 <br>
-                ${model.article.title} hjvhvujyc ${article.title}
                 <form role="form">
                     <div class="form-group">
                          <label for="Title">Title:</label>
@@ -38,15 +37,15 @@ tinymce.init({
                     </div>
                     <div class="form-group">
                         <label for="Tags">Tags:</label>
-                        <input type="text" class="form-control" id="Tags" placeholder="Tags">
+                        <input type="text" class="form-control" id="tags" placeholder="Tags">
                     </div>
                     <div class="form-group">
                         <label for="Keywords">Keywords:</label>
-                        <input type="text" class="form-control" id="Keywords" placeholder="Keywords">
+                        <input type="text" class="form-control" id="keywords" placeholder="Keywords">
                     </div>
                     <div class="form-group">
                         <label for="HeadTag">HeadTag:</label>
-                        <input type="text" class="form-control" id="HeadTag" placeholder="HeadTag">
+                        <input type="text" class="form-control" id="headTag" placeholder="HeadTag">
                     </div>
                     <div class="form-group">
                     <label for="Content">Content:</label>

@@ -1,8 +1,11 @@
-package com.chautha.core.model.entities;
+package com.chautha.dal.entities;
 
 import org.hibernate.annotations.GenericGenerator;
 
-import javax.persistence.*;
+import javax.persistence.Column;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.MappedSuperclass;
 
 /**
  * Created by rewati on 9/17/14.

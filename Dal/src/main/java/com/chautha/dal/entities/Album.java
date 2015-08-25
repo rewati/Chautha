@@ -1,4 +1,5 @@
-package com.chautha.core.model.entities;
+package com.chautha.dal.entities;
+
 
 import org.hibernate.validator.constraints.NotEmpty;
 

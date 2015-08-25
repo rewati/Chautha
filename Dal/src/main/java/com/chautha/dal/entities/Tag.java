@@ -1,4 +1,4 @@
-package com.chautha.core.model.entities;
+package com.chautha.dal.entities;
 
 import javax.persistence.Entity;
 import javax.persistence.ManyToMany;
@@ -8,7 +8,7 @@ import java.util.List;
  * Created by rewati on 9/19/14.
  */
 @Entity(name="tag")
-public class Tag extends UuidEntity{
+public class Tag extends UuidEntity {
     private String name;
     @ManyToMany(mappedBy = "tags")
     private List<Album> albums;

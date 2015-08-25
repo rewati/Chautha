@@ -9,11 +9,9 @@
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
     <modules>
-       <module>Core-util</module>
        <module>Dal</module>
        <module>Services</module>
        <module>Webside</module>
-       <module>PictureShop</module>
 
         <!--
        <module>ContainedServer</module>
@@ -47,6 +45,7 @@
                         <excludes>
                             <exclude>com/chautha/core/model/entities/*</exclude>
                             <exclude>com/chautha/containedserver/*</exclude>
+                            <exclude>com/chautha/dal/entities/*</exclude>
                         </excludes>
                     </instrumentation>
                     <check>

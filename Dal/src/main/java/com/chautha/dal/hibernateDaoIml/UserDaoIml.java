@@ -1,7 +1,7 @@
 package com.chautha.dal.hibernateDaoIml;
 
-import com.chautha.core.model.entities.User;
 import com.chautha.dal.dao.UserDao;
+import com.chautha.dal.entities.User;
 import org.hibernate.SessionFactory;
 import org.hibernate.exception.ConstraintViolationException;
 import org.slf4j.Logger;

@@ -1,6 +1,7 @@
-package com.chautha.core.model.entities.admin;
+package com.chautha.dal.entities.admin;
 
-import com.chautha.core.model.entities.UuidEntity;
+
+import com.chautha.dal.entities.UuidEntity;
 
 import javax.persistence.Entity;
 import java.io.Serializable;

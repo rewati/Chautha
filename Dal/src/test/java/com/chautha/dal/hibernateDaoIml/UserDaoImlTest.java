@@ -1,7 +1,7 @@
 package com.chautha.dal.hibernateDaoIml;
 
-import com.chautha.core.model.entities.User;
 import com.chautha.dal.dao.UserDao;
+import com.chautha.dal.entities.User;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -62,4 +62,6 @@ public class UserDaoImlTest {
         User user = createUser();
         userDao.update(user);
     }
+
+
 }

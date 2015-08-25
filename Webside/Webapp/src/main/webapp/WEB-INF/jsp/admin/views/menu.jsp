@@ -33,12 +33,10 @@
                         </li>
                         <li><a class="ajax-link" href="gallery.html"><i class="glyphicon glyphicon-user"></i><span> Users</span></a>
                         </li>
-                        <li><a class="ajax-link" onclick="myCall()"><i class="glyphicon glyphicon-user"></i><span> Users</span></a>
-                        </li>
                     </ul>
                 </div>
             </div>
 
-             </div>
+</div>
         <!--/span-->
         <!-- left menu ends -->

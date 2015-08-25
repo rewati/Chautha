@@ -1,12 +1,14 @@
-package com.chautha.core.model.entities;
+package com.chautha.dal.entities;
 
-import com.chautha.core.model.entities.admin.PageLayout;
+import com.chautha.dal.entities.admin.PageLayout;
+import org.hibernate.validator.constraints.NotEmpty;
 
 import javax.persistence.*;
+import javax.validation.constraints.NotNull;
 import javax.xml.bind.annotation.XmlRootElement;
 import java.io.Serializable;
+import java.util.Date;
 import java.util.List;
-import java.util.Set;
 
 /**
  * Created by rewati on 11/20/14.
@@ -14,6 +16,7 @@ import java.util.Set;
 @Entity
 @XmlRootElement
 public class Article extends UuidEntity implements Serializable {
+    @NotNull
     private PageLayout pageLayout;
     @OneToMany(cascade = CascadeType.ALL)
     @JoinTable(
@@ -21,9 +24,14 @@ public class Article extends UuidEntity implements Serializable {
             joinColumns = { @JoinColumn(name = "article_uuid")}
     )
     private List<Tag> tags;
+    @NotEmpty
     private String content;
+    @NotEmpty
     private String title;
     private String headTag;
+    private boolean published;
+    private Date publishedDate;
+    private Date createdDate;
 
     public PageLayout getPageLayout() {
         return pageLayout;
