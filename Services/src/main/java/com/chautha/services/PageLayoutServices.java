@@ -5,7 +5,7 @@ import com.chautha.core.model.entities.admin.PageLayout;
 import java.util.List;
 
 /**
- * Created by rewati on 11/5/14.
+ * Created by Rewati Raman
  */
 public interface PageLayoutServices {
     List<PageLayout> getPageLayoutList();

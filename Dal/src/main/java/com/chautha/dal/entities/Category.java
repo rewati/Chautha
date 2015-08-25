@@ -1,13 +1,15 @@
 package com.chautha.dal.entities;
 
-import javax.persistence.Entity;
+import javax.persistence.*;
+import java.io.Serializable;
 import java.util.Date;
+import java.util.List;
 
 /**
  * @author Rewati Raman
  */
 @Entity
-public class Category extends UuidEntity{
+public class Category extends UuidEntity implements Serializable {
     private String name;
     private String description;
     private boolean home;
@@ -16,6 +18,12 @@ public class Category extends UuidEntity{
     private boolean published;
     private Date publishedDate;
     private Date createdDate;
+    @OneToMany(cascade = CascadeType.ALL)
+    @JoinTable(
+            name = "Category_Article",
+            joinColumns = { @JoinColumn(name = "category_uuid")}
+    )
+    private List<Article> articles;
 
     public String getName() {
         return name;
@@ -79,5 +87,13 @@ public class Category extends UuidEntity{
 
     public void setCreatedDate(Date createdDate) {
         this.createdDate = createdDate;
+    }
+
+    public List<Article> getArticles() {
+        return articles;
+    }
+
+    public void setArticles(List<Article> articles) {
+        this.articles = articles;
     }
 }

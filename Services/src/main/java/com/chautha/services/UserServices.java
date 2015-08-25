@@ -4,7 +4,7 @@ import com.chautha.core.model.entities.User;
 import com.chautha.dal.dao.UserDao;
 
 /**
- * Created by rewati on 9/13/14.
+ * Created by Rewati Raman
  */
 public interface UserServices {
     void saveUser(User user);

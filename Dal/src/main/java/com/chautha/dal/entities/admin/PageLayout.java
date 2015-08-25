@@ -7,7 +7,7 @@ import javax.persistence.Entity;
 import java.io.Serializable;
 
 /**
- * Created by rewati on 11/1/14.
+ * Created by Rewati Raman
  */
 @Entity
 public class PageLayout extends UuidEntity implements Serializable {

@@ -10,7 +10,7 @@ import java.util.Properties;
 
 
 /**
- * Created by rewati on 9/27/14.
+ * Created by Rewati Raman.
  */
 public class Main {
 

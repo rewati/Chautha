@@ -15,11 +15,10 @@ import javax.persistence.PersistenceContext;
 import java.util.UUID;
 
 /**
- * Created by rewati on 9/13/14.
+ * Created by Rewati Raman
  */
 @Repository
 public class UserDaoIml extends BasicEntityDaoIml<User> implements UserDao {
 
-    private static final Logger logger = LoggerFactory.getLogger(UserDaoIml.class);
 
 }

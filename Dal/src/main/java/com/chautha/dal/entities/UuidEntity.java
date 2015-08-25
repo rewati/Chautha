@@ -8,7 +8,7 @@ import javax.persistence.Id;
 import javax.persistence.MappedSuperclass;
 
 /**
- * Created by rewati on 9/17/14.
+ * Created by Rewati Raman.
  */
 @MappedSuperclass
 public abstract class UuidEntity {

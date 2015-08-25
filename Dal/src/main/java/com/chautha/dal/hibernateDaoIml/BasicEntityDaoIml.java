@@ -1,6 +1,8 @@
 package com.chautha.dal.hibernateDaoIml;
 
 import com.chautha.dal.dao.BasicEntityDao;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Repository;
 
 import javax.persistence.EntityManager;
@@ -11,10 +13,13 @@ import java.lang.reflect.ParameterizedType;
 import java.util.List;
 
 /**
- * Created by rewati on 9/20/14.
+ * Created by Rewati Raman
  */
 @Repository
 public class BasicEntityDaoIml< T extends Serializable > implements BasicEntityDao <T>{
+
+
+    private static final Logger logger = LoggerFactory.getLogger(BasicEntityDaoIml.class);
 
     @PersistenceContext
     EntityManager em;

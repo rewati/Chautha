@@ -9,7 +9,7 @@ import org.junit.Test;
 import static org.easymock.EasyMock.*;
 
 /**
- * Created by rewati on 9/21/14.
+ * Created by Rewati Raman
  */
 public class UserServicesImlTest  {
 

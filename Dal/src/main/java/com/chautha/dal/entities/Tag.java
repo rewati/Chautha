@@ -1,17 +1,28 @@
 package com.chautha.dal.entities;
 
+import com.sun.javafx.beans.annotations.NonNull;
+
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.ManyToMany;
+import java.io.Serializable;
 import java.util.List;
 
 /**
- * Created by rewati on 9/19/14.
+ * Created by Rewati Raman
  */
-@Entity(name="tag")
-public class Tag extends UuidEntity {
+@Entity
+public class Tag extends UuidEntity implements Serializable {
+
+    @Column(unique=true)
+    @NonNull
     private String name;
+
     @ManyToMany(mappedBy = "tags")
     private List<Album> albums;
+
+    @ManyToMany(mappedBy = "tags")
+    private List<Article> articles;
 
     public String getName() {
         return name;
@@ -27,5 +38,13 @@ public class Tag extends UuidEntity {
 
     public void setAlbums(List<Album> albums) {
         this.albums = albums;
+    }
+
+    public List<Article> getArticles() {
+        return articles;
+    }
+
+    public void setArticles(List<Article> articles) {
+        this.articles = articles;
     }
 }

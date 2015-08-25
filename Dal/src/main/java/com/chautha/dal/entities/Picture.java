@@ -7,7 +7,7 @@ import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 
 /**
- * Created by rewati on 9/19/14.
+ * Created by Rewati Raman
  */
 @Entity
 public class Picture extends UuidEntity {

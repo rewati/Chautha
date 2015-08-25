@@ -8,7 +8,7 @@ import javax.xml.bind.annotation.XmlRootElement;
 import java.io.Serializable;
 
 /**
- * Created by rewati on 9/13/14.
+ * Created by Rewati Raman.
  */
 @Entity
 @XmlRootElement

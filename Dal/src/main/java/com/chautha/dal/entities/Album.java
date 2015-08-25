@@ -7,7 +7,7 @@ import javax.persistence.*;
 import java.util.List;
 
 /**
- * Created by rewati on 9/19/14.
+ * Created by Rewati Raman
  */
 @Entity
 public class Album extends UuidEntity{
@@ -18,7 +18,7 @@ public class Album extends UuidEntity{
     private String description;
     @ManyToMany(cascade = CascadeType.ALL)
     @JoinTable(
-            name = "album_tag",
+            name = "Album_Tag",
             joinColumns = { @JoinColumn(name = "album_uuid")},
             inverseJoinColumns = {@JoinColumn(name = "tag_uuid")}
     )
