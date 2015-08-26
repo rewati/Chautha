@@ -11,7 +11,6 @@ import java.io.Serializable;
  * Created by Rewati Raman.
  */
 @Entity
-@XmlRootElement
 public class User extends UuidEntity implements Serializable {
 
     @NotEmpty

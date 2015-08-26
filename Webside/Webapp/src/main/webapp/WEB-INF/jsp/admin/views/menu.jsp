@@ -6,7 +6,6 @@
 
                     </div>
                     <ul class="nav nav-pills nav-stacked main-menu">
-                        <li class="nav-header hidden-md">Main</li>
                         <li><a class="ajax-link" href="/admin"><i class="glyphicon glyphicon-home"></i><span> Dashboard</span></a>
                         </li>
                         <li class="accordion">
@@ -31,7 +30,7 @@
                         </li>
                         <li><a class="ajax-link" href="gallery.html"><i class="glyphicon glyphicon-wrench"></i><span> Settings</span></a>
                         </li>
-                        <li><a class="ajax-link" href="gallery.html"><i class="glyphicon glyphicon-user"></i><span> Users</span></a>
+                        <li><a class="ajax-link" href="/admin/usersList"><i class="glyphicon glyphicon-user"></i><span> Users</span></a>
                         </li>
                     </ul>
                 </div>

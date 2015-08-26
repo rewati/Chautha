@@ -1,10 +1,9 @@
 package com.chautha.dal.entities;
 
-import com.sun.javafx.beans.annotations.NonNull;
-
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.ManyToMany;
+import javax.validation.constraints.NotNull;
 import java.io.Serializable;
 import java.util.List;
 
@@ -15,7 +14,7 @@ import java.util.List;
 public class Tag extends UuidEntity implements Serializable {
 
     @Column(unique=true)
-    @NonNull
+    @NotNull
     private String name;
 
     @ManyToMany(mappedBy = "tags")

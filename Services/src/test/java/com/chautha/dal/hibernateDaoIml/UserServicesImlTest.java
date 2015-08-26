@@ -1,6 +1,6 @@
 package com.chautha.dal.hibernateDaoIml;
 
-import com.chautha.core.model.entities.User;
+import com.chautha.dal.entities.User;
 import com.chautha.dal.dao.UserDao;
 import com.chautha.services.UserServicesIml;
 import org.junit.Before;

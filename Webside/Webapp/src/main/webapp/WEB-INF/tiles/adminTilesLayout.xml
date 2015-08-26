@@ -38,4 +38,14 @@
         <put-attribute name="content" value="/WEB-INF/jsp/admin/views/pageLayoutForm.jsp" />
     </definition>
 
+    <definition name="usersList" extends="adminBase">
+        <put-attribute name="title" value="usersList" />
+        <put-attribute name="content" value="/WEB-INF/jsp/admin/views/usersList.jsp" />
+    </definition>
+
+    <definition name="categories" extends="adminBase">
+        <put-attribute name="title" value="categories" />
+        <put-attribute name="content" value="/WEB-INF/jsp/admin/views/categories.jsp" />
+    </definition>
+
 </tiles-definitions>

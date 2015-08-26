@@ -14,10 +14,10 @@ tinymce.init({
 <div>
     <ul class="breadcrumb">
         <li>
-            <a href="#">Home</a>
+            <a href="/">Home</a>
         </li>
         <li>
-            <a href="#">Forms</a>
+            <a href="/">Forms</a>
         </li>
     </ul>
 </div>

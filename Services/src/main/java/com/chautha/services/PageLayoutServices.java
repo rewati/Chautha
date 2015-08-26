@@ -1,6 +1,6 @@
 package com.chautha.services;
 
-import com.chautha.core.model.entities.admin.PageLayout;
+import com.chautha.dal.entities.admin.PageLayout;
 
 import java.util.List;
 

@@ -94,7 +94,9 @@
                             <exclude>com/chautha/dal/entities/*</exclude>
                         </excludes>
                     </instrumentation>
-                    <check/>
+                    <check>
+                        <haltOnFailure>false</haltOnFailure>
+                    </check>
                 </configuration>
             </plugin>
         </plugins>

@@ -1,6 +1,6 @@
 package com.chautha.services;
 
-import com.chautha.core.model.entities.User;
+import com.chautha.dal.entities.User;
 import com.chautha.dal.dao.UserDao;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

@@ -1,7 +1,6 @@
 package com.chautha.services;
 
-import com.chautha.core.model.entities.User;
-import com.chautha.dal.dao.UserDao;
+import com.chautha.dal.entities.User;
 
 /**
  * Created by Rewati Raman

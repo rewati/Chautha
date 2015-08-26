@@ -23,6 +23,12 @@
             <artifactId>easymock</artifactId>
             <version>3.2</version>
         </dependency>
+
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>jcl-over-slf4j</artifactId>
+            <version>1.7.7</version>
+        </dependency>
     </dependencies>
 
 
@@ -48,7 +54,7 @@
                             <exclude>com/chautha/dal/entities/*</exclude>
                         </excludes>
                     </instrumentation>
-                    <check>
+                    <check combine.children="append">
                         <haltOnFailure>false</haltOnFailure>
                         <!-- Per-class thresholds -->
                         <lineRate>80</lineRate>
