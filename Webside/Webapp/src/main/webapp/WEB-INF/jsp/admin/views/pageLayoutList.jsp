@@ -1,110 +1,35 @@
+<script type="text/javascript">
+  var returnData = [];
+  $.ajax({
+    url: "/webservices/admin/pagelayouts",
+    type: "GET",
+    dataType: "json",
+    success: function (data) {
+         returnData = data;
+         for (var x = 0; x < data.length; x++) {
+            $('#pagelayout-table').append('<tr><td>'+returnData[x].name+'</td><td>'+returnData[x].active+'</td><td>'+returnData[x].defaultLayout+'</td><td>'+returnData[x].createdDate+'</td><td class="center"><a class="btn btn-success" href="#"><i class="glyphicon glyphicon-zoom-in icon-white"></i> View</a><a class="btn btn-info" href="#"><i class="glyphicon glyphicon-edit icon-white"></i> Edit</a><a class="btn btn-danger" href="#"><i class="glyphicon glyphicon-trash icon-white"></i> Delete</a></td></tr>)');
+         }
+    }
+  });
+</script>
 <div class="box col-md-12">
             <div class="box-inner">
                 <div class="box-header well" data-original-title="">
-                    <h2><i class="glyphicon glyphicon-tasks"></i> Responsive, Swipable Table</h2>
+                    <h2><i class="glyphicon glyphicon-tasks"></i> Page Layouts</h2>
                 </div>
                 <div class="box-content">
-                    <table class="table table-striped table-bordered responsive">
+                    <table class="table table-striped table-bordered responsive" id="pagelayout-table">
                         <thead>
                         <tr>
-                            <th>Username</th>
-                            <th>Date registered</th>
-                            <th>Role</th>
-                            <th>Status</th>
+                            <th>Name</th>
+                            <th>Active</th>
+                            <th>Default Layout</th>
+                            <th>Date Created</th>
                             <th>Actions</th>
                         </tr>
                         </thead>
                         <tbody>
 
-
-                        <tr>
-                            <td>Muhammad Usman</td>
-                            <td class="center">2012/03/01</td>
-                            <td class="center">Member</td>
-                            <td class="center">
-                                <span class="label-warning label label-default">Pending</span>
-                            </td>
-                            <td class="center">
-                                <a class="btn btn-success" href="#">
-                                    <i class="glyphicon glyphicon-zoom-in icon-white"></i>
-                                    View
-                                </a>
-                                <a class="btn btn-info" href="#">
-                                    <i class="glyphicon glyphicon-edit icon-white"></i>
-                                    Edit
-                                </a>
-                                <a class="btn btn-danger" href="#">
-                                    <i class="glyphicon glyphicon-trash icon-white"></i>
-                                    Delete
-                                </a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Abraham</td>
-                            <td class="center">2012/03/01</td>
-                            <td class="center">Member</td>
-                            <td class="center">
-                                <span class="label-warning label label-default">Pending</span>
-                            </td>
-                            <td class="center">
-                                <a class="btn btn-success" href="#">
-                                    <i class="glyphicon glyphicon-zoom-in icon-white"></i>
-                                    View
-                                </a>
-                                <a class="btn btn-info" href="#">
-                                    <i class="glyphicon glyphicon-edit icon-white"></i>
-                                    Edit
-                                </a>
-                                <a class="btn btn-danger" href="#">
-                                    <i class="glyphicon glyphicon-trash icon-white"></i>
-                                    Delete
-                                </a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Brown Blue</td>
-                            <td class="center">2012/03/01</td>
-                            <td class="center">Member</td>
-                            <td class="center">
-                                <span class="label-warning label label-default">Pending</span>
-                            </td>
-                            <td class="center">
-                                <a class="btn btn-success" href="#">
-                                    <i class="glyphicon glyphicon-zoom-in icon-white"></i>
-                                    View
-                                </a>
-                                <a class="btn btn-info" href="#">
-                                    <i class="glyphicon glyphicon-edit icon-white"></i>
-                                    Edit
-                                </a>
-                                <a class="btn btn-danger" href="#">
-                                    <i class="glyphicon glyphicon-trash icon-white"></i>
-                                    Delete
-                                </a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Worth Name</td>
-                            <td class="center">2012/03/01</td>
-                            <td class="center">Member</td>
-                            <td class="center">
-                                <span class="label-warning label label-default">Pending</span>
-                            </td>
-                            <td class="center">
-                                <a class="btn btn-success" href="#">
-                                    <i class="glyphicon glyphicon-zoom-in icon-white"></i>
-                                    View
-                                </a>
-                                <a class="btn btn-info" href="#">
-                                    <i class="glyphicon glyphicon-edit icon-white"></i>
-                                    Edit
-                                </a>
-                                <a class="btn btn-danger" href="#">
-                                    <i class="glyphicon glyphicon-trash icon-white"></i>
-                                    Delete
-                                </a>
-                            </td>
-                        </tr>
                         </tbody>
                     </table>
                 </div>

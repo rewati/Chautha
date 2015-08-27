@@ -49,6 +49,13 @@ public class BasicEntityDaoIml< T extends Serializable > implements BasicEntityD
     }
 
     @Override
+    public List<T> getList() {
+        String table = getEntityClass().getName();
+        Query q = em.createQuery("select cat from "+table+"  cat");
+        return q.getResultList();
+    }
+
+    @Override
     public void delete(T object) {
 
     }

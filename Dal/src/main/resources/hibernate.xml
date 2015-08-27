@@ -17,7 +17,7 @@
             ">
 
 
-    <context:component-scan base-package="com.chautha,com.rrboss"/>
+    <context:component-scan base-package="com.chautha"/>
 
     <aop:aspectj-autoproxy />
     <bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource"

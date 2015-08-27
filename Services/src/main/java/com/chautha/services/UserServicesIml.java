@@ -8,6 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import javax.transaction.Transactional;
+import java.util.List;
 
 /**
  * Created by Rewati Raman
@@ -31,6 +32,11 @@ public class UserServicesIml implements UserServices {
         user1.setLastName("fnvwoin");
         logger.info("rewati.test");
         userDao.save(user1);
+    }
+
+    @Override
+    public List<User> getUsers() {
+        return userDao.getList();
     }
 
     public void setUserDao(UserDao userDao) {

@@ -37,6 +37,12 @@ public interface BasicEntityDao< T extends Serializable> {
 
     /**
      *
+     * @return
+     */
+    public List<T> getList();
+
+    /**
+     *
      * @param object
      */
     public void delete(T object);

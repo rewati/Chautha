@@ -67,11 +67,35 @@ public class PageLayoutDaoImlTest {
     private PageLayout createPageLayout(){
         PageLayout pageLayout = new PageLayout();
         pageLayout.setContent("test");
+        pageLayout.setName("testname");
         pageLayout.setFooter("footer");
         pageLayout.setHeader("header");
         pageLayout.setLeftBar("LeftBar");
         pageLayout.setRightBar("rightBar");
         pageLayout.setTopBar("topbar");
+        return pageLayout;
+    }
+
+    public void createFakeData(){
+        pageLayoutDao.save(createPageLayout("1"));
+        pageLayoutDao.save(createPageLayout("2"));
+        pageLayoutDao.save(createPageLayout("3"));
+        pageLayoutDao.save(createPageLayout("4"));
+        pageLayoutDao.save(createPageLayout("5"));
+        pageLayoutDao.save(createPageLayout("6"));
+        pageLayoutDao.save(createPageLayout("7"));
+        pageLayoutDao.save(createPageLayout("8"));
+    }
+
+    private PageLayout createPageLayout(String s){
+        PageLayout pageLayout = new PageLayout();
+        pageLayout.setContent("test"+s);
+        pageLayout.setName("test" + s);
+        pageLayout.setFooter("footer"+s);
+        pageLayout.setHeader("header"+s);
+        pageLayout.setLeftBar("LeftBar"+s);
+        pageLayout.setRightBar("rightBar"+s);
+        pageLayout.setTopBar("topbar"+s);
         return pageLayout;
     }
 }

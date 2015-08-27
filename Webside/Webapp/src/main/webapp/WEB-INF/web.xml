@@ -29,6 +29,8 @@
         <param-value>
             /WEB-INF/spring-security.xml
             classpath:cxf-context.xml
+            classpath:chauthaServices.xml
+            classpath:hibernate.xml
         </param-value>
     </context-param>
 

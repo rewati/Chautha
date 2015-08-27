@@ -26,7 +26,7 @@ public class AdminControlerTest {
         userServices.saveUser(null);
         expectLastCall().once();
         replay(userServices);
-        adminControler.testMethod();
+        adminControler.getDashBoard();
 
     }
 }

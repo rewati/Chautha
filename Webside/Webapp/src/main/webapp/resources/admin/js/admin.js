@@ -1,8 +1,8 @@
-function pageLayoutList() {
+$(document).ready(function() {
         					var request = $.ajax({
-        						url: "/admin/pageLayoutList",
+        						url: "/webservices/admin/users",
         						type: "GET",
-        						dataType: "html"
+        						dataType: "json"
         					});
 
         					request.done(function(msg) {
@@ -12,4 +12,4 @@ function pageLayoutList() {
         					request.fail(function(jqXHR, textStatus) {
         						alert( "Request failed: " + textStatus );
         					});
-}
+});
