@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+        "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+        "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+
+    <definition name="frontendBase"
+                template="/WEB-INF/jsp/frontend/views/frontend.jsp">
+        <put-attribute name="title" 	value="" />
+        <put-attribute name="header" 	value="/WEB-INF/jsp/frontend/views/header.jsp" />
+        <put-attribute name="topBar" 		value="/WEB-INF/jsp/frontend/views/topBar.jsp" />
+        <put-attribute name="leftBar" 		value="/WEB-INF/jsp/frontend/views/leftBar.jsp" />
+        <put-attribute name="rightBar" 		value="/WEB-INF/jsp/frontend/views/rightBar.jsp" />
+        <put-attribute name="content" 	value="/WEB-INF/jsp/frontend/views/content.jsp" />
+        <put-attribute name="footer" 	value="/WEB-INF/jsp/frontend/views/footer.jsp" />
+    </definition>
+
+    <definition name="admin" extends="adminBase">
+        <put-attribute name="title" value="admin" />
+        <put-attribute name="content" value="/WEB-INF/jsp/admin/views/dashboard.jsp" />
+    </definition>
+
+</tiles-definitions>

@@ -1,5 +1,6 @@
 package com.cahutha.restapi.admin;
 
+import com.chautha.dal.entities.Category;
 import com.chautha.dal.entities.User;
 import com.chautha.dal.entities.admin.PageLayout;
 import com.chautha.services.PageLayoutServices;
@@ -21,49 +22,60 @@ public class AdminControllerIml implements AdminController {
     @Autowired
     private UserServices userServices;
 
-    @Override
     public List<User> getUsers() {
         return userServices.getUsers();
     }
 
-    @Override
     public User getUser() {
         return null;
     }
 
-    @Override
     public void createUSer() {
 
     }
 
-    @Override
     public void updateUser() {
 
     }
 
-    @Override
     public void deleteUser() {
 
     }
 
-    @Override
     public User saveArticle(String name) {
         return null;
     }
 
-    @Override
+	public List<Category> getCategories() {
+		return null;
+	}
+
+	public Category getCategory() {
+		return null;
+	}
+
+	public void createCategory() {
+
+	}
+
+	public void updateCategory() {
+
+	}
+
+	public void deleteCategory() {
+
+	}
+
     public void savePageLayout() {
         pageLayoutServices.savePageLayout(createPageLayout());
     }
 
-    @Override
     public List<PageLayout> getPageLayouts() {
         return pageLayoutServices.getPageLayoutList();
     }
 
     private PageLayout createPageLayout(){
         PageLayout pageLayout = new PageLayout();
-        pageLayout.setContent("test");
         pageLayout.setFooter("footer");
         pageLayout.setHeader("header");
         pageLayout.setLeftBar("LeftBar");

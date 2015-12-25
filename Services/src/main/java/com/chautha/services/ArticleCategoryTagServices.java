@@ -12,7 +12,7 @@ import java.util.List;
 public interface ArticleCategoryTagServices {
     void saveArticle(Article article);
     List<Article> getArticles(ArticleSearch articleSearch);
-    Article getArticleByUrlString(String urlString);
+    Article getArticleByUrlString(String uuid,String url);
     List<Article> getArticlesByCategory(String categoryUuid);
     List<Article> getArticlesByCategory();
     List<Article> listArticleByTag(String tag);

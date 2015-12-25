@@ -1,6 +1,9 @@
 package com.chautha.dal.entities;
 
+import com.chautha.dal.entities.admin.PageLayout;
+
 import javax.persistence.*;
+import javax.validation.constraints.NotNull;
 import java.io.Serializable;
 import java.util.Date;
 import java.util.List;
@@ -24,6 +27,8 @@ public class Category extends UuidEntity implements Serializable {
             joinColumns = { @JoinColumn(name = "category_uuid")}
     )
     private List<Article> articles;
+    @NotNull
+    private PageLayout pageLayout;
 
     public String getName() {
         return name;
@@ -95,5 +100,13 @@ public class Category extends UuidEntity implements Serializable {
 
     public void setArticles(List<Article> articles) {
         this.articles = articles;
+    }
+
+    public PageLayout getPageLayout() {
+        return pageLayout;
+    }
+
+    public void setPageLayout(PageLayout pageLayout) {
+        this.pageLayout = pageLayout;
     }
 }

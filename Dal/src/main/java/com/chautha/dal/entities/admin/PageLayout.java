@@ -29,7 +29,6 @@ public class PageLayout extends UuidEntity implements Serializable {
     private String rightBar;
     private String header;
     private String footer;
-    private String content;
 
     public String getName() {
         return name;
@@ -101,13 +100,5 @@ public class PageLayout extends UuidEntity implements Serializable {
 
     public void setFooter(String footer) {
         this.footer = footer;
-    }
-
-    public String getContent() {
-        return content;
-    }
-
-    public void setContent(String content) {
-        this.content = content;
     }
 }

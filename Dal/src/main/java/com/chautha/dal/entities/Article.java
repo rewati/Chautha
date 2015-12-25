@@ -4,7 +4,6 @@ import com.chautha.dal.entities.admin.PageLayout;
 import org.hibernate.validator.constraints.NotEmpty;
 
 import javax.persistence.*;
-import javax.validation.constraints.NotNull;
 import javax.xml.bind.annotation.XmlRootElement;
 import java.io.Serializable;
 import java.util.Date;
@@ -16,7 +15,9 @@ import java.util.List;
 @Entity
 @XmlRootElement
 public class Article extends UuidEntity implements Serializable {
-    @NotNull
+
+    @ManyToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name="pageLayout_uuid")
     private PageLayout pageLayout;
     @OneToMany(cascade = CascadeType.ALL)
     @JoinTable(

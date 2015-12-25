@@ -7,7 +7,11 @@
     success: function (data) {
          returnData = data;
          for (var x = 0; x < data.length; x++) {
-            $('#pagelayout-table').append('<tr><td>'+returnData[x].name+'</td><td>'+returnData[x].active+'</td><td>'+returnData[x].defaultLayout+'</td><td>'+returnData[x].createdDate+'</td><td class="center"><a class="btn btn-success" href="#"><i class="glyphicon glyphicon-zoom-in icon-white"></i> View</a><a class="btn btn-info" href="#"><i class="glyphicon glyphicon-edit icon-white"></i> Edit</a><a class="btn btn-danger" href="#"><i class="glyphicon glyphicon-trash icon-white"></i> Delete</a></td></tr>)');
+            var statusString = '<span class="label-default label">Inactive</span>';
+            if(returnData[x].active) {
+                statusString = '<span class="label-success label label-default">Active</span>';
+            }
+            $('#pagelayout-table').append('<tr><td class="center">'+returnData[x].name+'</td><td class="center">'+statusString+'</td><td class="center">'+returnData[x].defaultLayout+'</td><td class="center">'+returnData[x].createdDate+'</td><td class="center"><a class="btn btn-success" href="#"><i class="glyphicon glyphicon-zoom-in icon-white"></i> View</a><a class="btn btn-info" href="#"><i class="glyphicon glyphicon-edit icon-white"></i> Edit</a><a class="btn btn-danger" href="#"><i class="glyphicon glyphicon-trash icon-white"></i> Delete</a></td></tr>)');
          }
     }
   });

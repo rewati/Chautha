@@ -1,3 +1,16 @@
+/.idea
+/Chautha.iml
 *.idea/*
 *.iml
 */target/*
+/.idea/.name
+/.idea/compiler.xml
+/.idea/copyright
+/.idea/libraries
+/.idea/misc.xml
+/.idea/modules.xml
+/.idea/vcs.xml
+/.idea/scopes
+/.idea/uiDesigner.xml
+/.idea/workspace.xml
+/.idea/encodings.xml

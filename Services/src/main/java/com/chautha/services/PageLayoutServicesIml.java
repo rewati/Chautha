@@ -15,17 +15,14 @@ public class PageLayoutServicesIml implements PageLayoutServices {
     @Autowired
     private PageLayoutDao pageLayoutDao;
 
-    @Override
     public List<PageLayout> getPageLayoutList() {
         return pageLayoutDao.getList();
     }
 
-    @Override
     public void savePageLayout(PageLayout pageLayout) {
         pageLayoutDao.save(pageLayout);
     }
 
-    @Override
     public void updatePageLayout(PageLayout pageLayout) {
         pageLayoutDao.update(pageLayout);
     }

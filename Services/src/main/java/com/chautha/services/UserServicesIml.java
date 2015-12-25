@@ -21,7 +21,6 @@ public class UserServicesIml implements UserServices {
     @Autowired
     private UserDao userDao;
 
-    @Override
     @Transactional
     public void saveUser(User user) {
 
@@ -34,7 +33,6 @@ public class UserServicesIml implements UserServices {
         userDao.save(user1);
     }
 
-    @Override
     public List<User> getUsers() {
         return userDao.getList();
     }

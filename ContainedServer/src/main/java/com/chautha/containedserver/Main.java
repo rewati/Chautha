@@ -44,7 +44,18 @@ public class Main {
             }
         }
 
-
+	    Integer port = null;
+	    try {
+		    String portString = prop.getProperty("WebServer_Posrt");
+		    if(portString!=null) {
+				port = Integer.parseInt(portString);
+		    }
+	    } catch (Exception e) {
+		    e.printStackTrace();
+	    }
+	    if(port==null) {
+		    port = 8080;
+	    }
         Server server = new Server(8080);
         WebAppContext webAppContext = getWebAppContext(prop);
         server.setHandler(webAppContext);

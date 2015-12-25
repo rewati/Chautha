@@ -7,12 +7,14 @@ import com.chautha.dal.entities.Article;
 import com.chautha.dal.entities.ArticleSearch;
 import com.chautha.dal.entities.Category;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
 /**
  * @author Rewati Raman
  */
+@Service
 public class ArticleCategoryTagServicesIml implements ArticleCategoryTagServices {
 
     @Autowired
@@ -24,42 +26,34 @@ public class ArticleCategoryTagServicesIml implements ArticleCategoryTagServices
     @Autowired
     private TagDao tagDao;
 
-    @Override
     public void saveArticle(Article article) {
 
     }
 
-    @Override
     public List<Article> getArticles(ArticleSearch articleSearch) {
         return null;
     }
 
-    @Override
-    public Article getArticleByUrlString(String urlString) {
-        return null;
+    public Article getArticleByUrlString(String uuid,String url) {
+        return articleDao.getArticle(uuid,url);
     }
 
-    @Override
     public List<Article> getArticlesByCategory(String categoryUuid) {
         return null;
     }
 
-    @Override
     public List<Article> getArticlesByCategory() {
         return null;
     }
 
-    @Override
     public List<Article> listArticleByTag(String tag) {
         return null;
     }
 
-    @Override
     public List<Category> listCategories() {
         return null;
     }
 
-    @Override
     public List<Category> listTags() {
         return null;
     }

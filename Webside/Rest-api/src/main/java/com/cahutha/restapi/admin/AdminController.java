@@ -1,9 +1,9 @@
 package com.cahutha.restapi.admin;
 
+import com.chautha.dal.entities.Category;
 import com.chautha.dal.entities.User;
 import com.chautha.dal.entities.admin.PageLayout;
 
-import javax.jws.WebMethod;
 import javax.jws.WebService;
 import javax.ws.rs.*;
 import java.util.List;
@@ -17,13 +17,12 @@ import java.util.List;
 public interface AdminController {
 
     //USERS
-    @Produces("application/json")
     @GET
     @Path("/users")
     public List<User> getUsers();
 
     @GET
-    @Path("/user")
+    @Path("/edit/user")
     public User getUser();
 
     @POST
@@ -40,25 +39,40 @@ public interface AdminController {
 
 
     //ARTICLES
-
-    @Produces("application/json,text/html")
     @POST
-    @Path("/savearticle")
+    @Path("/newarticle")
     public User saveArticle(String name);
 
 
     //CATEGORY
+    @GET
+    @Path("/categories")
+    public List<Category> getCategories();
+
+    @GET
+    @Path("/edit/category")
+    public Category getCategory();
+
+    @POST
+    @Path("/newcategory")
+    public void createCategory();
+
+    @PUT
+    @Path("/newcategory")
+    public void updateCategory();
+
+    @DELETE
+    @Path("/deletecategory")
+    public void deleteCategory();
 
     //TAG
 
     //PAGELAYOUT
 
-    @Produces("application/json,text/html")
     @POST
     @Path("/savepagelayout")
     public void savePageLayout();
 
-    @Produces("application/json")
     @GET
     @Path("/pagelayouts")
     public List<PageLayout> getPageLayouts();

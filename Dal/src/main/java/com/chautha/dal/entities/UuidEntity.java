@@ -15,7 +15,7 @@ public abstract class UuidEntity {
     @Id
     @GeneratedValue(generator = "hibernate-uuid")
     @GenericGenerator(name = "hibernate-uuid", strategy = "uuid2")
-    @Column(name = "uuid", columnDefinition = "char(36)", unique = true)
+    @Column(name = "uuid", columnDefinition = "char(64)", unique = true)
     private String uuid;
 
     public String getUuid() {

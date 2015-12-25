@@ -39,7 +39,7 @@ public class PageLayoutDaoImlTest {
 
     @Test
     public void testUpdate() throws Exception {
-        pageLayout.setContent("updated Test");
+
     }
 
     @Test
@@ -59,14 +59,8 @@ public class PageLayoutDaoImlTest {
         pageLayoutDao.delete(pageLayout);
     }
 
-    @Test
-    public void testGetPageLayoutList() throws Exception {
-        pageLayoutDao.getPageLayoutList();
-    }
-
     private PageLayout createPageLayout(){
         PageLayout pageLayout = new PageLayout();
-        pageLayout.setContent("test");
         pageLayout.setName("testname");
         pageLayout.setFooter("footer");
         pageLayout.setHeader("header");
@@ -89,7 +83,6 @@ public class PageLayoutDaoImlTest {
 
     private PageLayout createPageLayout(String s){
         PageLayout pageLayout = new PageLayout();
-        pageLayout.setContent("test"+s);
         pageLayout.setName("test" + s);
         pageLayout.setFooter("footer"+s);
         pageLayout.setHeader("header"+s);
