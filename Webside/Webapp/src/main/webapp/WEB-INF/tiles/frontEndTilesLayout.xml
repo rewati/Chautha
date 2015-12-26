@@ -15,9 +15,9 @@
         <put-attribute name="footer" 	value="/WEB-INF/jsp/frontend/views/footer.jsp" />
     </definition>
 
-    <definition name="admin" extends="adminBase">
-        <put-attribute name="title" value="admin" />
-        <put-attribute name="content" value="/WEB-INF/jsp/admin/views/dashboard.jsp" />
+    <definition name="article" extends="frontendBase">
+        <put-attribute name="title" value="article" />
+        <put-attribute name="content" value="/WEB-INF/jsp/frontend/views/article.jsp" />
     </definition>
 
 </tiles-definitions>
