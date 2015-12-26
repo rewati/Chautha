@@ -1,6 +1,7 @@
 package com.chautha.webside.webapp;
 
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 /**
@@ -17,5 +18,5 @@ public interface FrontendController {
 	String getCategory(String category);
 
 	@RequestMapping("article/{url}/{uuid}")
-	String getArticle(String uuid,String url);
+	String getArticle(String uuid,String url,ModelMap model);
 }
