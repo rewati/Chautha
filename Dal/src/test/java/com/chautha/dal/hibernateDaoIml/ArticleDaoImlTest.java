@@ -99,8 +99,9 @@ public class ArticleDaoImlTest {
 
     @Test
     public void testDelete() throws Exception {
-        articleDao.delete(testArticle);
-        Article a = articleDao.getByUuid(testArticle.getUuid());
+        Article articleToDelete = dBSetupForDelete();
+        articleDao.delete(articleToDelete);
+        Article a = articleDao.getByUuid(articleToDelete.getUuid());
         Assert.assertNull(a);
     }
 
@@ -123,6 +124,30 @@ public class ArticleDaoImlTest {
         pageLayout.setRightBar("rightbar");
         pageLayout.setTopBar("topbar");
         pageLayout.setName("testPageLayout");
+        article.setPageLayout(pageLayout);
+        articleDao.save(article);
+        return article;
+    }
+
+    private Article dBSetupForDelete() {
+        Article article =  new Article();
+        article.setContent("content");
+        article.setCreatedDate(new Date());
+        article.setHeadTag("headTag");
+        article.setPublished(true);
+        article.setPublishedDate(new Date());
+        article.setTitle("titleDelete");
+        article.setUrl(UUID.randomUUID().toString());
+        PageLayout pageLayout = new PageLayout();
+        pageLayout.setCreatedDate(new Date());
+        pageLayout.setActive(true);
+        pageLayout.setDefaultLayout(true);
+        pageLayout.setFooter("footer");
+        pageLayout.setHeader("header");
+        pageLayout.setLeftBar("leftbar");
+        pageLayout.setRightBar("rightbar");
+        pageLayout.setTopBar("topbar");
+        pageLayout.setName(UUID.randomUUID().toString());
         article.setPageLayout(pageLayout);
         articleDao.save(article);
         return article;
