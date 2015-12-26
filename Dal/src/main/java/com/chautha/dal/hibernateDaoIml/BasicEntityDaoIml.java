@@ -34,14 +34,6 @@ public abstract class BasicEntityDaoIml< T extends Serializable > implements Bas
         return this.em.find(getEntityClass(), uuid);
     }
 
-    public List<T> getList(String uuid, Integer lastpage, Integer resultsPerPage) {
-        String table = getEntityClass().getName();
-        Query q = em.createQuery("select cat from "+table+"  cat");
-        q.setFirstResult(lastpage*resultsPerPage+1);
-        q.setMaxResults(resultsPerPage);
-        return q.getResultList();
-    }
-
     public List<T> getList() {
         String table = getEntityClass().getName();
         Query q = em.createQuery("select cat from "+table+"  cat");

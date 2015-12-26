@@ -28,15 +28,6 @@ public interface BasicEntityDao< T extends Serializable> {
 
     /**
      *
-     * @param uuid
-     * @param lastpage
-     * @param resultsPerPage
-     * @return
-     */
-    public List<T> getList(String uuid, Integer lastpage, Integer resultsPerPage);
-
-    /**
-     *
      * @return
      */
     public List<T> getList();
