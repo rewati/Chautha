@@ -16,8 +16,5 @@ public class ArticleDaoIml extends BasicEntityDaoIml<Article> implements Article
 		String table = getEntityClass().getName();
 		Query q = em.createQuery("select cat from "+table+"  cat where uuid = '"+uuid+"' and url = '"+url+"'");
 		return (Article) q.getSingleResult();
-
-
-
 	}
 }
